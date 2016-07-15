@@ -27,3 +27,6 @@ def animate(i):
     line2.set_data(-x, y)  
     return line1, line2  
   
+ani = animation.FuncAnimation(figure, animate, init_func=init, frames=25, interval=200)  
+# ani.save('Heart.mp4')  save as mp4 but need to install video-encoder. i did not install it, so this line makes exeception  
+plt.show()  
